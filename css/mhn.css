@@ -1,0 +1,71 @@
+
+html, body {
+  height: 100%;
+}
+
+.wrapper-m {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 620px;
+}
+.wrapper-m .item-m {
+  display: flex;
+  flex-grow: 1;
+  transition: all .5s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper-m .item-m:hover {
+  flex-grow: 4;
+  box-shadow: inset 0 0 20px #000;
+}
+.wrapper-m .item-m:after {
+  content: "";
+  width: 200%;
+  height: 43.33%;
+  background-color: rgba(0, 0, 0, 0.75);
+  left: -50%;
+  bottom: -10%;
+  position: absolute;
+  transform: rotate(-15deg);
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Raleway';
+  font-weight: 100;
+}
+.wrapper-m .item-m.mprt-1 {
+    background-image: url(../img2/cor.jpg);
+  background-position: 70% center;
+}
+.wrapper-m .item-m.mprt-1:after {
+    
+  content: "CORPORATE";
+}
+.wrapper-m .item-m.mprt-2 {
+    background-image: url(../img2/wed.jpg);
+  background-position: 70% center;
+}
+.wrapper-m .item-m.mprt-2:after {
+  content: "wEDDINGS";
+}
+.wrapper-m .item-m.mprt-3 {
+    background-image: url(../img2/birth.jpg);
+  background-position: 70% center;
+}
+.wrapper-m .item-m.mprt-3:after {
+  content: "BIRTHDAY";
+}
+.wrapper-m .item-m.mprt-4 {
+    background-image: url(../img2/p1.jpg);
+  background-position: 70% center;
+}
+.wrapper-m .item-m.mprt-4:after {
+  content: "SOCIAL";
+}
